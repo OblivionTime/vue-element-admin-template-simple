@@ -29,8 +29,8 @@ yarn build
 
 ## 项目截图
 
-![list](.\assets\login.png)
+![list](https://raw.githubusercontent.com/OblivionTime/vue-element-admin-template-simple/main/assets/login.png)
 
-![login](.\assets\index.png)
+![list](https://raw.githubusercontent.com/OblivionTime/vue-element-admin-template-simple/main/assets/index.png)
 
-![index](.\assets\list.png)
+![list](https://raw.githubusercontent.com/OblivionTime/vue-element-admin-template-simple/main/assets/list.png)
