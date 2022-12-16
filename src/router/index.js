@@ -4,7 +4,7 @@
  * @Autor: solid
  * @Date: 2022-05-17 12:45:40
  * @LastEditors: solid
- * @LastEditTime: 2022-10-28 20:56:38
+ * @LastEditTime: 2022-12-14 12:05:04
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -27,14 +27,6 @@ export const constantRoutes = [
     hidden: true,
     meta: { title: '登录', },
   },
-
-  {
-    path: '/404',
-    component: () => import('@/views/404'),
-    hidden: true,
-    meta: { title: '404' },
-  },
-
   {
     path: '/',
     component: Layout,
@@ -44,30 +36,83 @@ export const constantRoutes = [
       {
         path: '/index',
         name: 'Index',
-        component: () => import('@/views/Index/index'),
+        component: () => import('@/views/index/index'),
         meta: { title: '首页' },
       },
     ]
   },
-
   {
-    path: '/list',
+    path: '/upload/',
     component: Layout,
-    meta: { title: '列表', icon: 'el-icon-tickets' },
+    name: 'upload',
+    meta: {
+      title: '文件上传',
+    },
     children: [
       {
-        path: '/list/list1',
-        name: 'list1',
-        component: () => import('@/views/List/list'),
-        meta: { title: '子列表', icon: 'stu-list' }
+        path: 'huobi',
+        component: () => import('@/views/upload/huobi'),
+        name: 'huobi_upload',
+        meta: {
+          title: '火币文件上传',
+          icon: ''
+        }
       },
       {
-        path: '/list/list2',
-        name: 'list2',
-        component: () => import('@/views/List/list2'),
-        meta: { title: '子列表2', icon: 'el-icon-tickets' }
+        path: 'bianance',
+        component: () => import('@/views/upload/bianance'),
+        name: 'bianance_upload',
+        meta: {
+          title: '币安文件上传',
+          icon: ''
+        }
       },
-
+      {
+        path: 'okex',
+        component: () => import('@/views/upload/okex'),
+        name: 'okex_upload',
+        meta: {
+          title: 'okex文件上传',
+          icon: ''
+        }
+      },
+    ]
+  },
+  {
+    path: '/dataAnalysis/',
+    component: Layout,
+    name: 'dataAnalysis',
+    meta: {
+      title: '数据分析',
+      icon: ''
+    },
+    children: [
+      {
+        path: 'originalTable',
+        component: () => import('@/views/originalTable/index'),
+        name: 'originalTable',
+        meta: {
+          title: '原始表',
+          icon: ''
+        }
+      },
+      {
+        path: 'searchAddress',
+        component: () => import('@/views/searchAddress/searchAddress'),
+        name: 'searchAddress',
+        meta: {
+          title: '出入地址搜索',
+          icon: ''
+        }
+      },{
+        path: 'figureAnalysis',
+        component: () => import('@/views/figureAnalysis/index'),
+        name: 'figureAnalysis',
+        meta: {
+          title: '图分析',
+          icon: ''
+        }
+      },
     ]
   },
   // 404 page must be placed at the end !!!
