@@ -1,5 +1,6 @@
 {
-  "name": "test",
+  "name": "Vue Admin Template Simple",
+  "description":"Vue Admin Template Simple",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -15,8 +16,7 @@
     "vue": "2.6.10",
     "vue-router": "3.0.6",
     "vuex": "3.1.0",
-    "echarts": "4.2.1",
-    "@antv/g6": "^4.7.14"
+    "echarts": "4.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.4.4",

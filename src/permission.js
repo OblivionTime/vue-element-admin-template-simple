@@ -4,7 +4,7 @@
  * @Autor: solid
  * @Date: 2022-05-17 12:45:40
  * @LastEditors: solid
- * @LastEditTime: 2022-12-14 11:36:40
+ * @LastEditTime: 2022-10-28 21:16:20
  */
 import router from './router'
 import NProgress from 'nprogress' // progress bar
